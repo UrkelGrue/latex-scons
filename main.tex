@@ -1,0 +1,29 @@
+\documentclass[10pt,a4paper]{article}
+%
+
+\usepackage[style=numeric, sorting=none]{biblatex}
+
+\usepackage{graphicx}
+\graphicspath{{../src/figures/}}
+\usepackage{epstopdf}
+\epstopdfsetup{outdir = ./}
+\usepackage{hyperref}
+
+
+\author{}
+\date{}
+
+\title{Template for Building Latex Documents with Scons}
+
+\addbibresource{bibliography.bib}
+
+\begin{document}
+	
+	\maketitle	
+	
+	\input{src/Content.tex}
+
+	\newpage
+	\printbibliography
+
+\end{document}
